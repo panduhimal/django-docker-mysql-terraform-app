@@ -41,3 +41,23 @@ variable "mysql_image" {
   type        = string
   default     = "mysql:9"
 }
+
+# Django app image and container variables
+
+variable "django_image_name" {
+  description = "The name of the Django app image"
+  type        = string
+  default     = "django_app_image"
+}
+
+variable "django_app_name" {
+  description = "The name of the Django app container"
+  type        = string
+  default     = "webapp"
+}
+
+variable "django_app_port" {
+  description = "The port for the Django container"
+  type        = number
+  default     = 8000
+}

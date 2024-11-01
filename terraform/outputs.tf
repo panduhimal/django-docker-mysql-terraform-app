@@ -10,3 +10,15 @@ output "mysql_container_id" {
   value       = docker_container.mysql_db.id
 }
 
+# Django app outputs
+
+output "django_app_image_id" {
+  description = "The ID of the Django app image"
+  value       = docker_image.django_app.id
+}
+
+output "django_app_container_id" {
+  description = "The ID of the Django app container"
+  value       = docker_container.webapp.id
+}
+
