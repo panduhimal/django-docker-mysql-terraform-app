@@ -3,7 +3,7 @@
 variable "mysql_db_name" {
   description = "The name of the MySQL database to create"
   type        = string
-  default     = "dummydb"
+  default     = "mysql_db"
 }
 
 variable "mysql_user" {
